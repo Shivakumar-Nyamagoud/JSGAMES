@@ -1,0 +1,113 @@
+/* Universal Reset and Box-Sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F7F5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.main-div {
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the main div on the page */
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: #003049;
+    color: #FCFFFD;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.task-div {
+    margin-top: 10px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the input and button */
+#task {
+    width: 90vmin;
+    height: 2rem;
+    padding: 0.5rem; /* Added padding for a better appearance */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#btn-submit {
+    width: 15vmin;
+    margin-left: 1rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #003049;
+    color: #FCFFFD;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect for button */
+#btn-submit:hover {
+    background-color: #002b45;
+}
+
+.tasks-div {
+    margin-top: 20px;
+}
+
+li {
+    width: 70vmin;
+    margin: 10px auto; /* Centers the list items */
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Space out text and delete button */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to each task */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Completed tasks style (only applies to the span) */
+span.completed {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #f0f0f0;
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #e0f7fa; /* Subtle background change on hover */
+}
+
+/* Delete button style */
+.delete-btn {
+    background-color: #2e2663;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for delete button */
+.delete-btn:hover {
+    background-color: #4f41a8;
+}
